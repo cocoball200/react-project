@@ -5,8 +5,8 @@ const app = express()
 const port = 5000
 //서버 포트를 5000번 
 
-const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://mia:cocoball200@cluster0.pawjo.mongodb.net/mia?retryWrites=true&w=majority', {
+const mongoose = require('mongoose'); //비번써야함 mia:에.
+mongoose.connect('mongodb+srv://mia:@cluster0.pawjo.mongodb.net/mia?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }).then(() => console.log("MongoDB Connected..."))
     .catch(err => console.log(err))
